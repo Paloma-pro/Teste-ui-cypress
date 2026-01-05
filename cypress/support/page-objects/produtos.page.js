@@ -24,8 +24,8 @@ class ProdutosPage {
     }
 
     addProdutoCarrinho(tamanho, cor, quantidade) {
-        cy.get('.button-variable-item-' + tamanho).click()     //Existem dois jeitos de colocar o parâmetro. Esse é o primeiro.
-        cy.get(`.button-variable-item-${cor}`).click()       // E esse é o segundo.
+        cy.get('li.button-variable-item-' + tamanho).should('be.visible').click()    //Existem dois jeitos de colocar o parâmetro. Esse é o primeiro.
+        cy.get(`.button-variable-item-${cor}`).click()           // E esse é o segundo.
         cy.get('.input-text').clear().type(quantidade)
         cy.get('.single_add_to_cart_button').click()
 
