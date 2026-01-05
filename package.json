@@ -5,21 +5,23 @@
   "main": "index.js",
   "scripts": {
     "test": "npx cypress run --browser edge",
-    "cy:dash" : "npx cypress run --record --key d4fb02e1-14f9-4d05-9093-13512ac7cfb6"
+    "cy:dash": "npx cypress run --record --key d4fb02e1-14f9-4d05-9093-13512ac7cfb6"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Paloma-pro/Teste-ebac-ui.git"
+    "url": "git+https://github.com/Paloma-pro/Teste-ui-cypress.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Paloma-pro/Teste-ebac-ui/issues"
+    "url": "https://github.com/Paloma-pro/Teste-ui-cypress/issues"
   },
-  "homepage": "https://github.com/Paloma-pro/Teste-ebac-ui#readme",
+  "homepage": "https://github.com/Paloma-pro/Teste-ui-cypress#readme",
   "dependencies": {
-    "@faker-js/faker": "^8.3.1",
-    "cypress": "^13.6.0"
+    "@faker-js/faker": "^8.3.1"
+  },
+  "devDependencies": {
+    "cypress": "^15.8.1"
   }
 }
